@@ -13,17 +13,17 @@ model.fit(X, y)
 
 plt.figure(figsize=(15, 5))
 
-# 'horsepower' özelliğinin grafiği
+# graph of the 'horsepower' property
 plt.subplot(1, 3, 1)
 sns.scatterplot(x='horsepower', y='price', data=data)
 sns.regplot(x='horsepower', y='price', data=data, scatter=False, color='red')
 
-# 'enginesize' özelliğinin grafiği
+# graph of the 'enginesize' property
 plt.subplot(1, 3, 2)
 sns.scatterplot(x='enginesize', y='price', data=data)
 sns.regplot(x='enginesize', y='price', data=data, scatter=False, color='red')
 
-# 'curbweight' özelliğinin grafiği
+# graph of the 'curbweight' property
 plt.subplot(1, 3, 3)
 sns.scatterplot(x='curbweight', y='price', data=data)
 sns.regplot(x='curbweight', y='price', data=data, scatter=False, color='red')
